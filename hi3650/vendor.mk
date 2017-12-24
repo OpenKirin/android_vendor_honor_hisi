@@ -281,7 +281,8 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/proprietary/etc/gnss/config/gnss_lss_rfg_key_thirdparty.pem:vendor/etc/gnss/config/gnss_lss_rfg_key_thirdparty.pem \
 	$(LOCAL_PATH)/proprietary/etc/gnss/config/gnss_lss_slp_thirdparty.p12:vendor/etc/gnss/config/gnss_lss_slp_thirdparty.p12 \
 	$(LOCAL_PATH)/proprietary/etc/gnss/config/gnss_suplconfig_hisi.xml:vendor/etc/gnss/config/gnss_suplconfig_hisi.xml \
-	$(LOCAL_PATH)/proprietary/etc/SensorHub.patch:vendor/etc/SensorHub.patch
+	$(LOCAL_PATH)/proprietary/etc/SensorHub.patch:vendor/etc/SensorHub.patch \
+	$(LOCAL_PATH)/proprietary/etc/wifi/hostapd.conf:vendor/etc/wifi/hostapd.conf
 
 
 
