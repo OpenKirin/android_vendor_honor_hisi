@@ -15,10 +15,10 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/proprietary/bin/secure_storage:vendor/bin/secure_storage \
 	$(LOCAL_PATH)/proprietary/bin/gpsdaemon:vendor/bin/gpsdaemon \
 	$(LOCAL_PATH)/proprietary/bin/glgps4774:vendor/bin/glgps4774 \
-	$(LOCAL_PATH)/proprietary/bin/glgps4774cl:vendor/bin/glgps4774cl \
-	$(LOCAL_PATH)/proprietary/bin/glgps4774:vendor/bin/glgps4774 \
-	$(LOCAL_PATH)/proprietary/bin/glgps4774cl:vendor/bin/glgps4774cl \
+	$(LOCAL_PATH)/proprietary/bin/lhd4774:vendor/bin/lhd4774 \
 	$(LOCAL_PATH)/proprietary/bin/cp:vendor/bin/cp \
+	$(LOCAL_PATH)/proprietary/bin/rm:vendor/bin/rm \
+	$(LOCAL_PATH)/proprietary/bin/chmod:vendor/bin/chmod \
 	$(LOCAL_PATH)/proprietary/bin/chown:vendor/bin/chown
 
 
@@ -160,8 +160,10 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/proprietary/lib64/hw/gps47531.default.so:vendor/lib64/hw/gps47531.default.so \
 	$(LOCAL_PATH)/proprietary/lib64/hw/gps4774cl.default.so:vendor/lib64/hw/gps4774cl.default.so \
 	$(LOCAL_PATH)/proprietary/lib64/hw/gps4774.default.so:vendor/lib64/hw/gps4774.default.so \
+	$(LOCAL_PATH)/proprietary/lib64/hw/gps.hi3650.so:vendor/lib64/hw/gps.hi3650.so \
 	$(LOCAL_PATH)/proprietary/lib64/hw/flp4774cl.default.so:vendor/lib64/hw/flp4774cl.default.so \
-	$(LOCAL_PATH)/proprietary/lib64/hw/flp4774.default.so:vendor/lib64/hw/flp4774.default.so \
+	$(LOCAL_PATH)/proprietary/lib64/hw/flp4774.default.so:vendor/lib64/hw/flp.hi3650.so \
+	$(LOCAL_PATH)/proprietary/lib64/libxml2.so:vendor/lib64/libxml2.so \
 	$(LOCAL_PATH)/proprietary/lib64/hw/vendor.huawei.hardware.gnss@1.0-impl.so:vendor/lib64/hw/vendor.huawei.hardware.gnss@1.0-impl.so \
 	$(LOCAL_PATH)/proprietary/lib64/libhwgpschannelclient.so:vendor/lib64/libhwgpschannelclient.so \
 	$(LOCAL_PATH)/proprietary/lib64/hw/vibrator.default.so:vendor/lib64/hw/vibrator.default.so
@@ -265,7 +267,22 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/proprietary/etc/gps4774config_cl.xml:vendor/etc/gps4774config_cl.xml \
 	$(LOCAL_PATH)/proprietary/etc/gps.conf:vendor/etc/gps.conf \
 	$(LOCAL_PATH)/proprietary/etc/lhd.conf:vendor/etc/lhd.conf \
+	$(LOCAL_PATH)/proprietary/etc/SensorHub.patch:vendor/etc/SensorHub.patch \
+	$(LOCAL_PATH)/proprietary/etc/geoloc.conf:vendor/etc/geoloc.conf \
+	$(LOCAL_PATH)/proprietary/etc/higeo.conf:vendor/etc/higeo.conf \
+	$(LOCAL_PATH)/proprietary/etc/higeo_beta.conf:vendor/etc/higeo_beta.conf \
+	$(LOCAL_PATH)/proprietary/etc/inv_ipld.prop:vendor/etc/inv_ipld.prop \
+	$(LOCAL_PATH)/proprietary/etc/inv_ipld_beta.prop:vendor/etc/inv_ipld_beta.prop \
+	$(LOCAL_PATH)/proprietary/etc/lhd_beta.conf:vendor/etc/lhd_beta.conf \
+	$(LOCAL_PATH)/proprietary/etc/nlp.conf:vendor/etc/nlp.conf \
+	$(LOCAL_PATH)/proprietary/etc/nlp_beta.conf:vendor/etc/nlp_beta.conf \
+	$(LOCAL_PATH)/proprietary/etc/gnss/gnss_lss_thirdparty.conf:vendor/etc/gnss/gnss_lss_thirdparty.conf \
+	$(LOCAL_PATH)/proprietary/etc/gnss/config/gnss_lss_config_thirdparty.bin:vendor/etc/gnss/config/gnss_lss_config_thirdparty.bin \
+	$(LOCAL_PATH)/proprietary/etc/gnss/config/gnss_lss_rfg_key_thirdparty.pem:vendor/etc/gnss/config/gnss_lss_rfg_key_thirdparty.pem \
+	$(LOCAL_PATH)/proprietary/etc/gnss/config/gnss_lss_slp_thirdparty.p12:vendor/etc/gnss/config/gnss_lss_slp_thirdparty.p12 \
+	$(LOCAL_PATH)/proprietary/etc/gnss/config/gnss_suplconfig_hisi.xml:vendor/etc/gnss/config/gnss_suplconfig_hisi.xml \
 	$(LOCAL_PATH)/proprietary/etc/SensorHub.patch:vendor/etc/SensorHub.patch
+
 
 
 
